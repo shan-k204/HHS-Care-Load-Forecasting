@@ -147,7 +147,7 @@ Add screenshots of your dashboard here after uploading them.
 ![Forecast](screenshots/forecast3.png)
 
 ### Data Explorer
--
+
 ![Data Explorer](screenshots/data_explorer.png)
 
 ### Filters
