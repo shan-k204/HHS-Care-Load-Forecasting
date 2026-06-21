@@ -199,7 +199,7 @@ streamlit run streamlit_app.py
 Streamlit Deployment:
 
 ```text
-Add deployment URL here after deployment
+[Add deployment URL here after deployment](https://hhs-care-load-forecasting-shank204.streamlit.app/)
 ```
 
 ---
