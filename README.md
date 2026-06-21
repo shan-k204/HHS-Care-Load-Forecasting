@@ -1,4 +1,4 @@
-<img width="1862" height="540" alt="data explorer" src="https://github.com/user-attachments/assets/05af1d78-81f6-462e-a0ff-09853e551ef2" /># 📈 Predictive Forecasting of HHS Care Load
+# 📈 Predictive Forecasting of HHS Care Load
 
 An interactive forecasting dashboard built using **Python, Streamlit, Plotly, ARIMA, and SARIMA** to predict future HHS (Health and Human Services) care load trends and support planning decisions through data-driven forecasting.
 
@@ -147,8 +147,8 @@ Add screenshots of your dashboard here after uploading them.
 ![Forecast](screenshots/forecast3.png)
 
 ### Data Explorer
-
-![Data Explorer](screenshots/data explorer.png)
+-
+![Data Explorer](screenshots/data_explorer.png)
 
 ### Filters
 
