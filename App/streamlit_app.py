@@ -14,29 +14,43 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-[data-testid="stSidebar"] {
-    padding-top: 6rem;
+
+[data-testid="stSidebar"]{
+    padding-top:6rem;
+    
+    border-radius:12px;
+
+    overflow:hidden;
 }
+
+[data-testid="stSidebar"] *{
+    line-height:1.5;
+}
+
+[data-testid="stSidebar"] label{
+    font-size:15px;
+}
+
+[data-testid="stSidebar"] .stSelectbox,
+[data-testid="stSidebar"] .stSlider{
+    margin-bottom:18px;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <style>
 .stApp {
-    background: linear-gradient(
-        135deg,
-        #0f172a,
-        #111827,
-        #1e293b
-    );
+    background: transparent;
 }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <div style="
-padding: 20px;
-border-radius: 15px;
+padding: 16px 22px;
+border-radius: 18px;
 background: linear-gradient(
     90deg,
     #1e3a8a,
@@ -44,14 +58,23 @@ background: linear-gradient(
     #3b82f6
 );
 text-align:center;
-margin-bottom: 10px;
+margin-bottom: 20px;
 ">
 
-<h1 style="color:white;">
+<h1 class="hero-title"
+style="
+color:white;
+font-size:40px;
+margin-bottom:8px;
+">
 📈 Predictive Forecasting of HHS Care Load
 </h1>
 
-<p style="color:white;">
+<p class="hero-subtitle"
+style="
+color:white;
+font-size:20px;
+">
 SARIMA/ARIMA-based forecasting dashboard for future care-load planning.
 </p>
 
@@ -235,17 +258,50 @@ with tab1:
         );
         border: 1px solid rgba(255,255,255,0.08);
         border-radius: 12px;
-        padding: 20px;
+        padding: 16px;
         text-align: center;
+        transition:0.25s ease;
+        
+    .metric-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(59,130,246,.20);
+
+    }
+    
     }
     .metric-title {
-        color: #cbd5e1;
+        color: inherit;
         font-size: 14px;
+        margin-bottom:8px;
+        font-weight:500;
     }
     .metric-value {
-        color: white;
+        color: inherit;
         font-size: 34px;
         font-weight: bold;
+    }
+    
+    @media (max-width:768px){
+    .metric-card{
+        padding:14px;
+    }
+    .metric-title{
+        font-size:12px;
+    }
+    .metric-value{
+        font-size:24px !important;
+    }
+    }
+    
+    @media (max-width:768px){
+    .hero-title{
+        font-size:34px !important;
+    }
+    .hero-subtitle{
+        font-size:15px !important;
+    }
     }
     </style>
     """, unsafe_allow_html=True)
@@ -379,13 +435,14 @@ with tab3:
 
     st.subheader("Dataset Preview")
 
-    if st.checkbox("Show Raw Dataset"):
+    st.dataframe(
+        filtered_df.tail(20),
+        use_container_width=True
+    )
 
-        st.dataframe(filtered_df.tail(20))
-
-        st.caption(
-            f"Showing latest 20 rows out of {len(filtered_df)} records."
-        )
+    st.caption(
+        f"Showing latest 20 rows out of {len(filtered_df)} records."
+    )
 
 historical_fig = px.line(
     filtered_df,
@@ -524,8 +581,8 @@ with tab2:
  )
 
     gauge_fig.update_layout(
-       height=400,
-       template="plotly_dark",
+       height=340,
+       template="plotly",
        margin=dict(t=50, b=20, l=20, r=20)
  )
     
@@ -550,10 +607,10 @@ with tab2:
  )
 
     monthly_bar_fig.update_layout(
-    template="plotly_dark",
+    template="plotly",
     xaxis_title="Month",
     yaxis_title="Children Count",
-    height=400,
+    height=340,
     margin=dict(t=50, b=20, l=20, r=20)
  )
 
@@ -623,8 +680,8 @@ with tab2:
  )
 
     histogram_fig.update_layout(
-        template="plotly_dark",
-        height=300,
+        template="plotly",
+        height=280,
         xaxis_title="Forecasted Children Count",
         yaxis_title="Frequency",
         margin=dict(
@@ -650,7 +707,7 @@ with tab2:
        use_container_width=True
  )
     
-    with st.expander("View Forecast Values"):
+    with st.expander("Forecast Dataset"):
 
         st.dataframe(forecast_df)
 
