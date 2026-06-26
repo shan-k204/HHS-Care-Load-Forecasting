@@ -7,7 +7,7 @@ from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 st.set_page_config(
-    page_title="HHS Forecast Dashboard",
+    page_title="HHS Forecast",
     page_icon="📈",
     layout="wide"
 )
