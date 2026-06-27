@@ -138,21 +138,23 @@ Add screenshots of your dashboard here after uploading them.
 
 ### Overview Dashboard
 
-![Overview](screenshots/overview.png)
+<img width="1920" height="1200" alt="overview" src="https://github.com/user-attachments/assets/71fdc025-70b8-4cca-a22a-95a35e02a49a" />
 
 ### Forecast Dashboard
 
-![Forecast](screenshots/forecast1.png)
-![Forecast](screenshots/forecast2.png)
-![Forecast](screenshots/forecast3.png)
+<img width="1920" height="1200" alt="forecast1" src="https://github.com/user-attachments/assets/27ccc317-234f-4ba0-97ae-aebe06a14a14" />
+
+<img width="1919" height="777" alt="forecast2" src="https://github.com/user-attachments/assets/0e9afe42-0235-42e9-a82d-70921120f3f4" />
+<img width="1915" height="466" alt="forecast3" src="https://github.com/user-attachments/assets/26a3f739-6f4d-4c37-83e3-577ff114a31d" />
+<img width="1919" height="755" alt="forecast4" src="https://github.com/user-attachments/assets/1310e863-1efc-40f1-bb07-383462d16011" />
 
 ### Data Explorer
 
-![Data Explorer](screenshots/data_explorer.png)
+<img width="1919" height="984" alt="data explorer" src="https://github.com/user-attachments/assets/6a45623e-2087-4712-8907-7970f2d96a34" />
 
 ### Filters
 
-![Filters](screenshots/filters.png)
+<img width="365" height="592" alt="filters" src="https://github.com/user-attachments/assets/9171f62a-537c-44eb-a695-6e28700ae61b" />
 
 ---
 
