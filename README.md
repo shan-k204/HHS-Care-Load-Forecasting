@@ -223,16 +223,11 @@ Through this project, I gained hands-on experience with:
 
 **Shantanu Kamble**
 
-Aspiring Data Analyst | Data Science Enthusiast
+Data Analytics | Data Science | Machine Learning
 
-Skills:
-- Python
-- SQL
-- Excel
-- Power BI
-- Tableau
-- Machine Learning
-- Data Visualization
+GitHub: https://github.com/shan-k204
+
+LinkedIn: www.linkedin.com/in/shantanu-kamble-64a21929a
 
 ---
 
